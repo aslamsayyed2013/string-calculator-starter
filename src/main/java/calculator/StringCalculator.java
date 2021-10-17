@@ -1,7 +1,9 @@
 package calculator;
 
 class StringCalculator {
-/*
+public static int addCount;
+
+	/*
     public int add1(String input) {
     	String[] numbers=input.split(delimiter);
     	int sum=0;
@@ -65,6 +67,7 @@ class StringCalculator {
 	}
    */ 
 	public static int add(String text){
+			addCount=addCount+1;
 	       if(text.equals("")){
 	           return 0;
 	       }
@@ -110,6 +113,7 @@ class StringCalculator {
 	    }
 	   
 	   public static int add1(String text){
+			addCount=addCount+1;
 	       if(text.equals("")){
 	           return 0;
 	       }

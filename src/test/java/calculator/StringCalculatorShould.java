@@ -94,6 +94,11 @@ class StringCalculatorShould {
 	    public void testMultipleDelimiter(){
 	       assertEquals(6, StringCalculator.add1("//[**][%%]\n1**2%%3"));
 	    }
+	    
+	    @Test
+	    public void testCount(){
+		       assertEquals(6, StringCalculator.addCount);
+		    }
    
 }
 
