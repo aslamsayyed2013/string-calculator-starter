@@ -7,28 +7,37 @@ import static org.junit.jupiter.api.Assertions.*;
 class StringCalculatorShould {
 
     @Test
-    void empty_string_should_return_0() {
+    void emptyString() {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(0, stringCalculator.add(""));
     }
 
     @Test
-    void string_with_single_number_should_return_number_as_int() {
+    void singleNumber() {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(1, stringCalculator.add("1"));
     }
-    
     @Test
-    void string_with_dual_number_should_return_sum_as_int() {
+    void DoubleNumber() {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(3, stringCalculator.add("1,2"));
     }
-
     @Test
-    void string_with_array_number_should_return_sum_as_int() {
+    void moreThanOneNumber() {
         StringCalculator stringCalculator = new StringCalculator();
-        assertEquals(6, stringCalculator.add("1,2,3"));
+        assertEquals(6, stringCalculator.add1("1,2,3"));
+    }
+    @Test
+    void newLine() {
+        StringCalculator stringCalculator = new StringCalculator();
+        assertEquals(6, stringCalculator.add("1\n2,3"));
     }
     
-    
+    @Test
+    public void negativeInputException() throws Exception{
+    	String.add("-1,2");
+    }
+
+   
 }
+
