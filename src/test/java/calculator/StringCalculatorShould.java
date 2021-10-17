@@ -89,6 +89,11 @@ class StringCalculatorShould {
 	    public void testOtherDelimiter(){
 	       assertEquals(3, StringCalculator.add("//;\n1;2"));
 	    }
+	    
+	    @Test
+	    public void testMultipleDelimiter(){
+	       assertEquals(6, StringCalculator.add1("//[**][%%]\n1**2%%3"));
+	    }
    
 }
 
