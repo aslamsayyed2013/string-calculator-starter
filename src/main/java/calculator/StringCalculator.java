@@ -70,7 +70,7 @@ class StringCalculator {
 	       }
 	       else{
 	           String delimiter = ",";
-	           if(text.matches("//(.)\n(.)")){
+	           if(text.matches("//(.)\n(.);")){
 	               delimiter = Character.toString(text.charAt(2));
 	               text = text.substring(4);
 	           }
@@ -87,7 +87,6 @@ class StringCalculator {
 	   private static String[] splitNumbers(String numbers, String divider){
 	       return numbers.split(divider);
 	   }
-
 	   private static int sum(String[] numbers){
 	       int total = 0;
 	       String negString = "";
