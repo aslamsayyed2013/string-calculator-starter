@@ -13,10 +13,10 @@ class StringCalculator {
     		//	System.out.println(word);
     			sum=sum+Integer.parseInt(word);
     		}
-    	}
+    	}/*
     	else {
     	 sum=Integer.parseInt(input);
-    	}
+    	}*/
 		return sum;
     }
 
