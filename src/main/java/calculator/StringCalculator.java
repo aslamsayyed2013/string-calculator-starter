@@ -111,7 +111,6 @@ public static int addCount;
 
 	       return total;
 	    }
-	   
 	   public static int add1(String text){
 			addCount=addCount+1;
 	       if(text.equals("")){
